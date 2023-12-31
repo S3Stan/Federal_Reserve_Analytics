@@ -2,32 +2,12 @@ import Analysis_repo
 from Analysis_repo import notebook_import_library
 
 # datafile URL
-
-#df = dd.read_csv('your_dataset.csv')
-creditcardData_p1 = notebook_import_library.pd.read_csv("Analysis_repo/Datasets/creditCardData_p1of2.csv" , sep=",")
-creditcardData_p2 = notebook_import_library.pd.read_csv("Analysis_repo/Datasets/creditCardData_p2of2.csv" , sep=",")
-creditcardData_prediction = notebook_import_library.pd.read_csv("Analysis_repo/Datasets/creditCardData_prediction.csv", sep=",")
-
-
-# exception to catch what happens when dataset is called 
-class datasetNotFoundException(Exception):
-    pass 
-
+consumer_credit_data = notebook_import_library.pd.read_csv("Analysis_repo/Datasets/feds200628.csv"
+                                                           )
 # imports 
-def sendCreditCardData_part1():
-    analysis_size_data = creditcardData_p1
-    return analysis_size_data
+def sendConsumerCreditData():
+    return consumer_credit_data
 
-def sendCreditCardData_part2():
-    analysis_size_data = creditcardData_p2
-    return analysis_size_data
-
-
-def sendPredictionDataset():
-    return creditcardData_prediction
-
-
-import dask.dataframe as dd
 
 
 # Datset saving code
