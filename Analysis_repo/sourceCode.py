@@ -1,12 +1,18 @@
+#imports
 import Analysis_repo
 from Analysis_repo import notebook_import_library
 
 # datafile URL
-consumer_credit_data = notebook_import_library.pd.read_csv("Analysis_repo/Datasets/feds200628.csv"
-                                                           )
+consumer_credit_data = notebook_import_library.pd.read_csv("Analysis_repo/Datasets/FRB_G13to23.csv", sep=",")
+
+# exception to catch what happens when dataset is called 
+class datasetNotFoundException(Exception):
+    pass 
+
 # imports 
 def sendConsumerCreditData():
-    return consumer_credit_data
+    credit_analysis_data = consumer_credit_data
+    return credit_analysis_data
 
 
 
