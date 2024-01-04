@@ -7,6 +7,7 @@ import pandas as pd
 # plots
 import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
+import seaborn as sns
 
 
 
