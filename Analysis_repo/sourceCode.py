@@ -19,16 +19,12 @@ def sendInterestRateData():
     int_rate_data = interest_rate_data
     return int_rate_data
 
+# Code upgrading ideas
+# connect data source via API COnnection instead of downloading dataset.
 
 
 # Datset saving code
 # # Save the DataFrame to a CSV file
 #df.to_csv('dataset.csv', index=False)
-
-
-# creditcardData = pd.read_csv("C:/Users/stanf/OneDrive/Desktop/creditcard_mod.csv" , sep=",")
-# df = creditcardData.iloc[45000:90000]
-# print(df)
-
 
 # df.to_csv('Analysis_repo/Datasets/creditCardData_p2of2.csv', index=False)
