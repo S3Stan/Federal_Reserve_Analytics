@@ -6,6 +6,7 @@ import pandas as pd
 
 # plots
 import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap as ColorMap
 from matplotlib.ticker import ScalarFormatter
 import seaborn as sns
 fig, ax = plt.subplots()
